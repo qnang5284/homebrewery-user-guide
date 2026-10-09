@@ -9,46 +9,48 @@ This basic guide walks you from a blank brew to a printable PDF, and covers the 
 
 ---
 
+
+
 ## Table of contents
 
 1. [What Homebrewery is](#1-what-homebrewery-is)
 2. [Start a new document](#2-start-a-new-document)
 3. [Core Markdown syntax](#3-core-markdown-syntax)
 4. [Text Editor](#4-text-editor)
-   - [Column Break](#41-column-break)
-   - [New Page](#42-new-page)
-   - [Page Numbering](#43-page-numbering)
-   - [Footer](#44-footer)
-   - [Vertical Spacing](#45-vertical-spacing)
-   - [Horizontal Spacing](#46-horizontal-spacing)
-   - [Wide Block](#47-wide-block)
-   - [QR Code](#48-qr-code)
-   - [Link to page](#49-link-to-page)
-   - [Add Comment](#410-add-comment)
-   - [Homebrewery Credit](#411-homebrewery-credit)
-   - [Table of Contents](#412-table-of-contents)
-   - [Index](#413-index)
+  - [Column Break](#41-column-break)
+  - [New Page](#42-new-page)
+  - [Page Numbering](#43-page-numbering)
+  - [Footer](#44-footer)
+  - [Vertical Spacing](#45-vertical-spacing)
+  - [Horizontal Spacing](#46-horizontal-spacing)
+  - [Wide Block](#47-wide-block)
+  - [QR Code](#48-qr-code)
+  - [Link to page](#49-link-to-page)
+  - [Add Comment](#410-add-comment)
+  - [Homebrewery Credit](#411-homebrewery-credit)
+  - [Table of Contents](#412-table-of-contents)
+  - [Index](#413-index)
 5. [Player's Handbook snippets](#5-players-handbook-snippets)
-   - [Spell](#51-spell)
-   - [Spell List](#52-spell-list)
-   - [Class Feature](#53-class-feature)
-   - [Quote](#54-quote)
-   - [Note](#55-note)
-   - [Descriptive Text Box](#56-descriptive-text-box)
-   - [Monster Stat Block (unframed)](#57-monster-stat-block-unframed)
-   - [Monster Stat Block](#58-monster-stat-block)
-   - [Wide Monster Stat Block](#59-wide-monster-stat-block)
-   - [Front Cover Page](#510-front-cover-page)
-   - [Inside Cover Page](#511-inside-cover-page)
-   - [Part Cover Page](#512-part-cover-page)
-   - [Back Cover Page](#513-back-cover-page)
-   - [Magic Item](#514-magic-item)
-   - [Artist Credit](#515-artist-credit)
+  - [Spell](#51-spell)
+  - [Spell List](#52-spell-list)
+  - [Class Feature](#53-class-feature)
+  - [Quote](#54-quote)
+  - [Note](#55-note)
+  - [Descriptive Text Box](#56-descriptive-text-box)
+  - [Monster Stat Block (unframed)](#57-monster-stat-block-unframed)
+  - [Monster Stat Block](#58-monster-stat-block)
+  - [Wide Monster Stat Block](#59-wide-monster-stat-block)
+  - [Front Cover Page](#510-front-cover-page)
+  - [Inside Cover Page](#511-inside-cover-page)
+  - [Part Cover Page](#512-part-cover-page)
+  - [Back Cover Page](#513-back-cover-page)
+  - [Magic Item](#514-magic-item)
+  - [Artist Credit](#515-artist-credit)
 6. [Images, tables et al.](#6-images-tables-et-al)
-   - [Images](#61-images)
-   - [Tables](#62-tables)
-   - [Fonts](#63-fonts)
-   - [License](#64-license)
+  - [Images](#61-images)
+  - [Tables](#62-tables)
+  - [Fonts](#63-fonts)
+  - [License](#64-license)
 7. [Export to PDF](#7-export-to-pdf)
 8. [Quick troubleshooting](#8-quick-troubleshooting)
 9. [Where to go next](#9-where-to-go-next)
@@ -56,6 +58,8 @@ This basic guide walks you from a blank brew to a printable PDF, and covers the 
 A later chapter will cover **Style** snippets.
 
 ---
+
+
 
 ## 1. What Homebrewery is
 
@@ -78,7 +82,11 @@ If something looks “off,” it is usually a missing page break, overflowing co
 
 ---
 
+
+
 ## 2. Start a new document
+
+
 
 ### 2.1 Open the editor
 
@@ -87,16 +95,20 @@ If something looks “off,” it is usually a missing page break, overflowing co
 3. Start a new brew (Home / **New**, or [https://homebrewery.naturalcrit.com/new](https://homebrewery.naturalcrit.com/new)).
 4. Keep the **V3** renderer for new work. Legacy still opens old documents; new snippets and styling live on V3.
 
+
+
 ### 2.2 Learn the workspace
 
-| Area | What it does |
-| --- | --- |
-| **Brew editor** (left) | Your Markdown source |
-| **Preview** (right) | Paginated pages as they will print |
-| **Snippet bar** | Inserts PHB blocks, tables, images, page numbers |
-| **Style tab** | Optional CSS (skip this until you need custom colors) |
-| **Metadata** | Title, description, tags, and sharing options |
-| **History** | Local backups of recent edits |
+
+| Area                   | What it does                                          |
+| ---------------------- | ----------------------------------------------------- |
+| **Brew editor** (left) | Your Markdown source                                  |
+| **Preview** (right)    | Paginated pages as they will print                    |
+| **Snippet bar**        | Inserts PHB blocks, tables, images, page numbers      |
+| **Style tab**          | Optional CSS (skip this until you need custom colors) |
+| **Metadata**           | Title, description, tags, and sharing options         |
+| **History**            | Local backups of recent edits                         |
+
 
 **Gentle advice:** save early, give the brew a real title, and write one short paragraph first. Confirm the preview updates before you add stat blocks. That single check saves a lot of “did I type in the wrong place?” confusion.
 
@@ -105,6 +117,8 @@ If something looks “off,” it is usually a missing page break, overflowing co
 Place the cursor where the content should appear, then pick a snippet (for example **PHB → Monster Stat Block** or **Tables → …**). Homebrewery pastes a complete, valid example. Replace the placeholder names and numbers. You can always trim extra rows later.
 
 ---
+
+
 
 ## 3. Core Markdown syntax
 
@@ -142,6 +156,8 @@ In monster traits, Homebrewery convention is italic-bold on the trait name:
 ***Keen Smell.*** The hound has advantage on Wisdom (Perception) checks that rely on smell.
 ```
 
+
+
 ### Lists
 
 **Unordered**
@@ -178,9 +194,15 @@ You can write HTML when you must, but stay in Markdown until a snippet cannot do
 
 ---
 
+
+
 ## 4. Text Editor
 
+
+
 The **Text Editor** menu (pencil icon on the snippet bar) is the layout toolkit. These snippets do not draw monsters or class charts. They decide **where** text sits: pages, columns, numbers, footers, contents, and a few extras.
+
+![Text editor menu, showing the different available snippets](./assets/text-editor-menu.png)
 
 **How to use any of them**
 
@@ -253,6 +275,8 @@ Type any label you want: `1`, `iv`, `A-3`. Homebrewery prints that text as the f
 {{pageNumber iv}}
 ```
 
+
+
 #### Auto-incrementing Page Number
 
 **Inserts:** `{{pageNumber,auto}}`
@@ -263,6 +287,8 @@ Homebrewery counts physical pages and paints the digit on the outer corner (odd 
 {{pageNumber,auto}}
 ```
 
+
+
 #### Variable Auto Page Number
 
 **Inserts:** `{{pageNumber $[HB_pageNumber]}}`
@@ -272,6 +298,8 @@ Homebrewery counts physical pages and paints the digit on the outer corner (odd 
 ```markdown
 {{pageNumber $[HB_pageNumber]}}
 ```
+
+
 
 #### Skip Page Number Increment this Page
 
@@ -284,6 +312,8 @@ Put this on covers, inside covers, and credits sheets. That page prints **withou
 
 # Saltmarsh Gazetteer
 ```
+
+
 
 #### Restart Numbering
 
@@ -335,6 +365,8 @@ Each colon is a small vertical gap. The snippet drops several at once so you can
 Two iron bars and a sleeping mastiff.
 ```
 
+
+
 ### 4.6 Horizontal Spacing
 
 **Menu:** Text Editor → **Horizontal Spacing**  
@@ -345,6 +377,8 @@ Use this between words, icons, or short phrases when you need a fixed gap that a
 ```markdown
 Name {{width:100px}} Signature _______________
 ```
+
+
 
 ### 4.7 Wide Block
 
@@ -420,6 +454,8 @@ The Homebrewery
 }}
 ```
 
+
+
 ### 4.12 Table of Contents
 
 **Menu:** Text Editor → **Table of Contents**  
@@ -462,6 +498,8 @@ Unlike the ToC, the index is **not** generated from headings. You maintain the e
 Indent subentries with two spaces after the `-`. Use an en-dash for ranges (`26-27`). Place the index at the back of the brew.
 
 ---
+
+
 
 ## 5. Player's Handbook snippets
 
@@ -570,6 +608,8 @@ The yellow (parchment) sidebar the PHB uses for asides, optional rules, and “t
 Harbor Watch will ignore a bribe under 5 gp. They will not ignore a talking gull.
 }}
 ```
+
+
 
 ### 5.6 Descriptive Text Box
 
@@ -717,6 +757,8 @@ Add one credit per sourced image. This does not replace a license page; it is th
 
 ---
 
+
+
 ## 6. Images, tables et al.
 
 This chapter covers four snippet menus you will use after layout and PHB blocks are in place: **Images**, **Tables**, **Fonts**, and **License**, in that order. Insert them from the snippet bar the same way as before: cursor first, then the snippet, then replace placeholders.
@@ -737,7 +779,9 @@ The basic snippet: Markdown image plus a curly-brace style list.
 
 - **Alt text** in `![...]` — a short description if the URL fails.
 - **URL** in `(...)` — a reachable link; a private or expired host shows a blank.
-- **`{width:...}`** — size. Use `px`, `cm`, or `%` (`width:100%` fills the column).
+- `{width:...}` — size. Use `px`, `cm`, or `%` (`width:100%` fills the column).
+
+
 
 #### Image Wrap Left / Image Wrap Right
 
@@ -805,6 +849,8 @@ A single-column PHB table (character advancement, loot, a short encounter chart)
 | 300 | 2 | +2 |
 ```
 
+
+
 #### Wide Table
 
 Wraps the table in `{{wide}}` so it spans both columns. Use this for weapons lists, class-like charts with many columns, or anything that looks crushed in one column.
@@ -827,6 +873,8 @@ Two small tables side by side inside `{{column-count:2}}` (for example Typical D
 | Very hard | 25 |
 }}
 ```
+
+
 
 #### Class Tables
 
@@ -865,18 +913,20 @@ Each snippet wraps a short sample in `{{font-family:Name ... }}`. Replace “Dum
 {{font-family:MrEavesRemake Chapter 1}}
 ```
 
-| Snippet | What it is for |
-| --- | --- |
-| **Book Insanity** | PHB body serif — long prose. |
-| **Mr Eaves** | PHB chapter and section titles. |
-| **Scaly Sans** / **Scaly Sans Small Caps** | Stat-block and label sans. |
-| **Solbera Imitation** | Large drop-cap style letters. |
-| **Nodesto Caps Condensed** | Cover and display titles. |
-| **Open Sans**, **Lato**, **Overpass** | Clean modern sans for UI-like notes. |
-| **Pagella**, **Times New Roman** | Generic readable serifs. |
-| **Code Bold**, **Code Light**, **Courier** | Monospace / “computer” or cipher printouts. |
-| **Walter Turncoat** | Handwritten notes and graffiti. |
-| **Davek**, **Rellanic**, **Iokharic** | Dwarvish, Elvish, and Draconic scripts (same families as Rune Table). |
+
+| Snippet                                    | What it is for                                                        |
+| ------------------------------------------ | --------------------------------------------------------------------- |
+| **Book Insanity**                          | PHB body serif — long prose.                                          |
+| **Mr Eaves**                               | PHB chapter and section titles.                                       |
+| **Scaly Sans** / **Scaly Sans Small Caps** | Stat-block and label sans.                                            |
+| **Solbera Imitation**                      | Large drop-cap style letters.                                         |
+| **Nodesto Caps Condensed**                 | Cover and display titles.                                             |
+| **Open Sans**, **Lato**, **Overpass**      | Clean modern sans for UI-like notes.                                  |
+| **Pagella**, **Times New Roman**           | Generic readable serifs.                                              |
+| **Code Bold**, **Code Light**, **Courier** | Monospace / “computer” or cipher printouts.                           |
+| **Walter Turncoat**                        | Handwritten notes and graffiti.                                       |
+| **Davek**, **Rellanic**, **Iokharic**      | Dwarvish, Elvish, and Draconic scripts (same families as Rune Table). |
+
 
 If a line looks huge or tiny, you wrapped a whole paragraph by mistake—keep font snippets on the short phrase that needs the voice.
 
@@ -910,6 +960,8 @@ If you are only circulating a private table PDF with your own words and stock ar
 
 ---
 
+
+
 ## 7. Export to PDF
 
 Homebrewery prints through the **browser**. Prefer **Chrome** (Firefox works, but PDF quirks show up there more often).
@@ -923,22 +975,28 @@ For playtest feedback without freezing the layout, use the live **Share** link i
 
 ---
 
+
+
 ## 8. Quick troubleshooting
 
-| What you see | Likely cause | What to try |
-| --- | --- | --- |
-| Text hanging off the page | Overflow into a third CSS column, or a missing `\page` | Add a page break; shorten the column; move a tall block |
-| `\page` does nothing | It is not alone at the start of a line | Put it on its own line |
-| Right column empty | No overflow and no `\column` | Insert `\column` where the right-hand section should start |
-| Stat block looks like a note | Missing `{{monster,frame` (V3) or snippet not inserted | Re-insert the PHB monster snippet |
-| Table crushed | Table is in a single column | Wrap in `{{wide ... }}` |
-| PDF missing backgrounds | Print dialog dropped background graphics | Turn **Background graphics** on, margins none, letter, 100% |
-| PDF differs from HTML around `wide` | Rare browser column bug, or `\column` directly above `{{wide` | Prefer Chrome; avoid a hard column break immediately before a wide block |
-| Contents page numbers disagree with the folio | ToC generated before skip/restart, or not regenerated | Fix numbering snippets, then run **Table of Contents** again |
+
+| What you see                                  | Likely cause                                                  | What to try                                                              |
+| --------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Text hanging off the page                     | Overflow into a third CSS column, or a missing `\page`        | Add a page break; shorten the column; move a tall block                  |
+| `\page` does nothing                          | It is not alone at the start of a line                        | Put it on its own line                                                   |
+| Right column empty                            | No overflow and no `\column`                                  | Insert `\column` where the right-hand section should start               |
+| Stat block looks like a note                  | Missing `{{monster,frame` (V3) or snippet not inserted        | Re-insert the PHB monster snippet                                        |
+| Table crushed                                 | Table is in a single column                                   | Wrap in `{{wide ... }}`                                                  |
+| PDF missing backgrounds                       | Print dialog dropped background graphics                      | Turn **Background graphics** on, margins none, letter, 100%              |
+| PDF differs from HTML around `wide`           | Rare browser column bug, or `\column` directly above `{{wide` | Prefer Chrome; avoid a hard column break immediately before a wide block |
+| Contents page numbers disagree with the folio | ToC generated before skip/restart, or not regenerated         | Fix numbering snippets, then run **Table of Contents** again             |
+
 
 You are not expected to get the first page perfect. Adjust `\page` and `\column` the way you would nudge frames in a desktop publisher.
 
 ---
+
+
 
 ## 9. Where to go next
 
@@ -948,6 +1006,8 @@ You are not expected to get the first page perfect. Adjust `\page` and `\column`
 - Bugs and requests: [naturalcrit/homebrewery issues](https://github.com/naturalcrit/homebrewery/issues)
 
 ---
+
+
 
 ### A small working starter
 
