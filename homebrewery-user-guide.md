@@ -3,13 +3,11 @@
 **Audience:** First-time authors who want D&D-style pages without a layout app  
 **Product:** [The Homebrewery](https://homebrewery.naturalcrit.com) (NaturalCrit)  
 **Renderer:** V3 (recommended for new documents)  
-**Last updated:** 9 October 2026
+**Last updated:** 10 October 2026
 
 This basic guide walks you from a blank brew to a printable PDF, and covers the most known and basic snippets you will find in the app, to help you start your journey to creating your very first professional looking 5e module. You do not need to memorize every snippet. Homebrewery injects the hard parts for you; you only need a few Markdown habits and a handful of Homebrewery-specific lines.
 
 ---
-
-
 
 ## Table of contents
 
@@ -51,15 +49,23 @@ This basic guide walks you from a blank brew to a printable PDF, and covers the 
   - [Tables](#62-tables)
   - [Fonts](#63-fonts)
   - [License](#64-license)
-7. [Export to PDF](#7-export-to-pdf)
-8. [Quick troubleshooting](#8-quick-troubleshooting)
-9. [Where to go next](#9-where-to-go-next)
-
-A later chapter will cover **Style** snippets.
+7. [Editor tools](#7-editor-tools)
+   - [History](#history)
+   - [Undo](#undo)
+   - [Redo](#redo)
+   - [Fold All](#fold-all)
+   - [Unfold All](#unfold-all)
+   - [Clean your Code](#clean-your-code)
+   - [Brew Editor](#brew-editor)
+   - [Style Editor](#style-editor)
+   - [Snippets](#snippets)
+   - [Properties](#properties)
+   - [Settings](#settings)
+8. [Export to PDF](#8-export-to-pdf)
+9. [Quick troubleshooting](#9-quick-troubleshooting)
+10. [Where to go next](#10-where-to-go-next)
 
 ---
-
-
 
 ## 1. What Homebrewery is
 
@@ -82,11 +88,7 @@ If something looks “off,” it is usually a missing page break, overflowing co
 
 ---
 
-
-
 ## 2. Start a new document
-
-
 
 ### 2.1 Open the editor
 
@@ -94,8 +96,6 @@ If something looks “off,” it is usually a missing page break, overflowing co
 2. Sign in with Google if you want the brew saved to your account (strongly recommended).
 3. Start a new brew (Home / **New**, or [https://homebrewery.naturalcrit.com/new](https://homebrewery.naturalcrit.com/new)).
 4. Keep the **V3** renderer for new work. Legacy still opens old documents; new snippets and styling live on V3.
-
-
 
 ### 2.2 Learn the workspace
 
@@ -117,8 +117,6 @@ If something looks “off,” it is usually a missing page break, overflowing co
 Place the cursor where the content should appear, then pick a snippet (for example **PHB → Monster Stat Block** or **Tables → …**). Homebrewery pastes a complete, valid example. Replace the placeholder names and numbers. You can always trim extra rows later.
 
 ---
-
-
 
 ## 3. Core Markdown syntax
 
@@ -156,8 +154,6 @@ In monster traits, Homebrewery convention is italic-bold on the trait name:
 ***Keen Smell.*** The hound has advantage on Wisdom (Perception) checks that rely on smell.
 ```
 
-
-
 ### Lists
 
 **Unordered**
@@ -194,11 +190,7 @@ You can write HTML when you must, but stay in Markdown until a snippet cannot do
 
 ---
 
-
-
 ## 4. Text Editor
-
-
 
 The **Text Editor** menu (pencil icon on the snippet bar) is the layout toolkit. These snippets do not draw monsters or class charts. They decide **where** text sits: pages, columns, numbers, footers, contents, and a few extras.
 
@@ -275,8 +267,6 @@ Type any label you want: `1`, `iv`, `A-3`. Homebrewery prints that text as the f
 {{pageNumber iv}}
 ```
 
-
-
 #### Auto-incrementing Page Number
 
 **Inserts:** `{{pageNumber,auto}}`
@@ -287,8 +277,6 @@ Homebrewery counts physical pages and paints the digit on the outer corner (odd 
 {{pageNumber,auto}}
 ```
 
-
-
 #### Variable Auto Page Number
 
 **Inserts:** `{{pageNumber $[HB_pageNumber]}}`
@@ -298,8 +286,6 @@ Homebrewery counts physical pages and paints the digit on the outer corner (odd 
 ```markdown
 {{pageNumber $[HB_pageNumber]}}
 ```
-
-
 
 #### Skip Page Number Increment this Page
 
@@ -312,8 +298,6 @@ Put this on covers, inside covers, and credits sheets. That page prints **withou
 
 # Saltmarsh Gazetteer
 ```
-
-
 
 #### Restart Numbering
 
@@ -365,8 +349,6 @@ Each colon is a small vertical gap. The snippet drops several at once so you can
 Two iron bars and a sleeping mastiff.
 ```
 
-
-
 ### 4.6 Horizontal Spacing
 
 **Menu:** Text Editor → **Horizontal Spacing**  
@@ -377,8 +359,6 @@ Use this between words, icons, or short phrases when you need a fixed gap that a
 ```markdown
 Name {{width:100px}} Signature _______________
 ```
-
-
 
 ### 4.7 Wide Block
 
@@ -454,8 +434,6 @@ The Homebrewery
 }}
 ```
 
-
-
 ### 4.12 Table of Contents
 
 **Menu:** Text Editor → **Table of Contents**  
@@ -498,8 +476,6 @@ Unlike the ToC, the index is **not** generated from headings. You maintain the e
 Indent subentries with two spaces after the `-`. Use an en-dash for ranges (`26-27`). Place the index at the back of the brew.
 
 ---
-
-
 
 ## 5. Player's Handbook snippets
 
@@ -608,8 +584,6 @@ The yellow (parchment) sidebar the PHB uses for asides, optional rules, and “t
 Harbor Watch will ignore a bribe under 5 gp. They will not ignore a talking gull.
 }}
 ```
-
-
 
 ### 5.6 Descriptive Text Box
 
@@ -757,8 +731,6 @@ Add one credit per sourced image. This does not replace a license page; it is th
 
 ---
 
-
-
 ## 6. Images, tables et al.
 
 This chapter covers four snippet menus you will use after layout and PHB blocks are in place: **Images**, **Tables**, **Fonts**, and **License**, in that order. Insert them from the snippet bar the same way as before: cursor first, then the snippet, then replace placeholders.
@@ -780,8 +752,6 @@ The basic snippet: Markdown image plus a curly-brace style list.
 - **Alt text** in `![...]` — a short description if the URL fails.
 - **URL** in `(...)` — a reachable link; a private or expired host shows a blank.
 - `{width:...}` — size. Use `px`, `cm`, or `%` (`width:100%` fills the column).
-
-
 
 #### Image Wrap Left / Image Wrap Right
 
@@ -849,8 +819,6 @@ A single-column PHB table (character advancement, loot, a short encounter chart)
 | 300 | 2 | +2 |
 ```
 
-
-
 #### Wide Table
 
 Wraps the table in `{{wide}}` so it spans both columns. Use this for weapons lists, class-like charts with many columns, or anything that looks crushed in one column.
@@ -873,8 +841,6 @@ Two small tables side by side inside `{{column-count:2}}` (for example Typical D
 | Very hard | 25 |
 }}
 ```
-
-
 
 #### Class Tables
 
@@ -960,9 +926,68 @@ If you are only circulating a private table PDF with your own words and stock ar
 
 ---
 
+## 7. Editor tools
 
+The snippet bar is more than snippet menus. Along it (and on the tabs at the right) sit tools that save you from lost work, tidy the source, and switch what you are editing. You do not need CSS to use any of these.
 
-## 7. Export to PDF
+### History
+
+The **clock** button. Homebrewery keeps **local backups** of this brew in the browser (up to five snapshots, from a few minutes old to a few days). Open **History** and click a snapshot to restore it.
+
+Use this after an accidental select-all-and-type, a bad paste, or a tab that went wrong. Restore **before** you refresh if you still have Undo; History is the fallback when Undo is not enough. These copies live on **this computer**, not in the cloud.
+
+### Undo
+
+Steps backward through recent edits in the current editor (Brew or Style). The snippet-bar **Undo** button and **Ctrl+Z** / **Cmd+Z** do the same job. Mash it after you overwrite a selection.
+
+### Redo
+
+Steps forward again after Undo. Use the **Redo** button or **Ctrl+Y** / **Cmd+Shift+Z**. Switching Brew ↔ Style no longer wipes this stack.
+
+### Fold All
+
+Collapses every `\page` section in the source so you see a short outline instead of the full Markdown. Handy in a long module when you only need the chapter you are on. Shortcut: **Ctrl+[**.
+
+### Unfold All
+
+Expands every folded page again. Shortcut: **Ctrl+]**. Folding does not change the preview or the PDF; it only hides source until you unfold.
+
+### Clean your Code
+
+Formats the current editor with a standard layout (indentation and wrapping). On the **Style** tab this runs a CSS formatter (also **Ctrl+Shift+F** / **Alt+Shift+F**). Use it when a paste looks like one long line. It does not change how the brew *looks* in the preview unless you had a syntax error that the formatter happens to fix. Glance at the preview after you click it, then Undo if the result is not what you wanted.
+
+### Brew Editor
+
+The **mug** tab. This is the Markdown source: story, snippets, `\page`, tables. Stay here for almost all writing. The left pane you have used since Chapter 2 **is** the Brew Editor.
+
+### Style Editor
+
+The **paintbrush** tab. This pane is **only CSS** for this brew: page size, colours, drop caps, ink-friendly print. Built-in **Print** and other style snippets insert here, not into the Markdown. You can ignore this tab and still finish a complete PHB-looking module. If you do open it, put custom rules here instead of burying `<style>` tags in the Brew Editor. This chapter will not teach CSS.
+
+### Snippets
+
+The **list** tab next to Style. This is where **you** define reusable bits (a house-style note, a custom stat-block stub). They then appear under a **Brew Snippets** menu on the snippet bar. Built-in PHB and Text Editor snippets do **not** live here; those menus are already filled. Widen the editor pane if Brew Snippets looks empty or clipped. Custom snippets can travel with a theme you share.
+
+### Properties
+
+The **i** (info) button. Metadata for **this brew**:
+
+- **Title** and description (what appears on your user page and in search)
+- **Tags** (including `meta:theme` if this brew is a theme for others)
+- **Theme** dropdown (Blank, PHB, or another brew tagged as a theme)
+- **Renderer:** keep **V3** for new work; Legacy is for old documents
+- **Language** (hyphenation and spellcheck)
+- Publish / share visibility for the Vault
+
+Set the title early. Do not switch renderer mid-project unless you are ready to fix syntax.
+
+### Settings
+
+The **gear** (often on the preview side). This is **how you look at** the brew, not the brew’s content: single page vs facing pages vs a continuous “flow” view, **Sync views** (scrolling the editor and preview together), and **Hide** for the page strip. None of these change the PDF except insofar as they help you spot overflow before you export.
+
+---
+
+## 8. Export to PDF
 
 Homebrewery prints through the **browser**. Prefer **Chrome** (Firefox works, but PDF quirks show up there more often).
 
@@ -975,9 +1000,7 @@ For playtest feedback without freezing the layout, use the live **Share** link i
 
 ---
 
-
-
-## 8. Quick troubleshooting
+## 9. Quick troubleshooting
 
 
 | What you see                                  | Likely cause                                                  | What to try                                                              |
@@ -996,9 +1019,7 @@ You are not expected to get the first page perfect. Adjust `\page` and `\column`
 
 ---
 
-
-
-## 9. Where to go next
+## 10. Where to go next
 
 - Editor: [https://homebrewery.naturalcrit.com](https://homebrewery.naturalcrit.com)
 - Changelog (new snippets and print behavior): project [changelog](https://github.com/naturalcrit/homebrewery/blob/master/changelog.md)
@@ -1006,8 +1027,6 @@ You are not expected to get the first page perfect. Adjust `\page` and `\column`
 - Bugs and requests: [naturalcrit/homebrewery issues](https://github.com/naturalcrit/homebrewery/issues)
 
 ---
-
-
 
 ### A small working starter
 
