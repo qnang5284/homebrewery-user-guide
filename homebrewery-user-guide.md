@@ -9,6 +9,8 @@ This basic guide walks you from a blank brew to a printable PDF, and covers the 
 
 ---
 
+
+
 ## Table of contents
 
 1. [What Homebrewery is](#1-what-homebrewery-is)
@@ -50,22 +52,24 @@ This basic guide walks you from a blank brew to a printable PDF, and covers the 
   - [Fonts](#63-fonts)
   - [License](#64-license)
 7. [Editor tools](#7-editor-tools)
-   - [History](#history)
-   - [Undo](#undo)
-   - [Redo](#redo)
-   - [Fold All](#fold-all)
-   - [Unfold All](#unfold-all)
-   - [Clean your Code](#clean-your-code)
-   - [Brew Editor](#brew-editor)
-   - [Style Editor](#style-editor)
-   - [Snippets](#snippets)
-   - [Properties](#properties)
-   - [Settings](#settings)
+  - [History](#history)
+  - [Undo](#undo)
+  - [Redo](#redo)
+  - [Fold All](#fold-all)
+  - [Unfold All](#unfold-all)
+  - [Clean your Code](#clean-your-code)
+  - [Brew Editor](#brew-editor)
+  - [Style Editor](#style-editor)
+  - [Snippets](#snippets)
+  - [Properties](#properties)
+  - [Settings](#settings)
 8. [Export to PDF](#8-export-to-pdf)
 9. [Quick troubleshooting](#9-quick-troubleshooting)
 10. [Where to go next](#10-where-to-go-next)
 
 ---
+
+
 
 ## 1. What Homebrewery is
 
@@ -88,7 +92,11 @@ If something looks “off,” it is usually a missing page break, overflowing co
 
 ---
 
+
+
 ## 2. Start a new document
+
+
 
 ### 2.1 Open the editor
 
@@ -97,17 +105,18 @@ If something looks “off,” it is usually a missing page break, overflowing co
 3. Start a new brew (Home / **New**, or [https://homebrewery.naturalcrit.com/new](https://homebrewery.naturalcrit.com/new)).
 4. Keep the **V3** renderer for new work. Legacy still opens old documents; new snippets and styling live on V3.
 
+
+
 ### 2.2 Learn the workspace
 
+![Homebrewery layout, showing the brew editor, preview, and snippet bar](./assets/homebrewery-layout.png)
 
-| Area                   | What it does                                          |
-| ---------------------- | ----------------------------------------------------- |
-| **Brew editor** (left) | Your Markdown source                                  |
-| **Preview** (right)    | Paginated pages as they will print                    |
-| **Snippet bar**        | Inserts PHB blocks, tables, images, page numbers      |
-| **Style tab**          | Optional CSS (skip this until you need custom colors) |
-| **Metadata**           | Title, description, tags, and sharing options         |
-| **History**            | Local backups of recent edits                         |
+
+| Area                    | What it does                                     |
+| ----------------------- | ------------------------------------------------ |
+| **Brew editor** **(1)** | Your Markdown source                             |
+| **Preview** **(2)**     | Paginated pages as they will print               |
+| **Snippet bar (3)**     | Inserts PHB blocks, tables, images, page numbers |
 
 
 **Gentle advice:** save early, give the brew a real title, and write one short paragraph first. Confirm the preview updates before you add stat blocks. That single check saves a lot of “did I type in the wrong place?” confusion.
@@ -117,6 +126,8 @@ If something looks “off,” it is usually a missing page break, overflowing co
 Place the cursor where the content should appear, then pick a snippet (for example **PHB → Monster Stat Block** or **Tables → …**). Homebrewery pastes a complete, valid example. Replace the placeholder names and numbers. You can always trim extra rows later.
 
 ---
+
+
 
 ## 3. Core Markdown syntax
 
@@ -154,6 +165,8 @@ In monster traits, Homebrewery convention is italic-bold on the trait name:
 ***Keen Smell.*** The hound has advantage on Wisdom (Perception) checks that rely on smell.
 ```
 
+
+
 ### Lists
 
 **Unordered**
@@ -189,6 +202,8 @@ A line with only a colon adds a little vertical space:
 You can write HTML when you must, but stay in Markdown until a snippet cannot do the job.
 
 ---
+
+
 
 ## 4. Text Editor
 
@@ -267,6 +282,8 @@ Type any label you want: `1`, `iv`, `A-3`. Homebrewery prints that text as the f
 {{pageNumber iv}}
 ```
 
+
+
 #### Auto-incrementing Page Number
 
 **Inserts:** `{{pageNumber,auto}}`
@@ -277,6 +294,8 @@ Homebrewery counts physical pages and paints the digit on the outer corner (odd 
 {{pageNumber,auto}}
 ```
 
+
+
 #### Variable Auto Page Number
 
 **Inserts:** `{{pageNumber $[HB_pageNumber]}}`
@@ -286,6 +305,8 @@ Homebrewery counts physical pages and paints the digit on the outer corner (odd 
 ```markdown
 {{pageNumber $[HB_pageNumber]}}
 ```
+
+
 
 #### Skip Page Number Increment this Page
 
@@ -298,6 +319,8 @@ Put this on covers, inside covers, and credits sheets. That page prints **withou
 
 # Saltmarsh Gazetteer
 ```
+
+
 
 #### Restart Numbering
 
@@ -349,6 +372,8 @@ Each colon is a small vertical gap. The snippet drops several at once so you can
 Two iron bars and a sleeping mastiff.
 ```
 
+
+
 ### 4.6 Horizontal Spacing
 
 **Menu:** Text Editor → **Horizontal Spacing**  
@@ -359,6 +384,8 @@ Use this between words, icons, or short phrases when you need a fixed gap that a
 ```markdown
 Name {{width:100px}} Signature _______________
 ```
+
+
 
 ### 4.7 Wide Block
 
@@ -434,6 +461,8 @@ The Homebrewery
 }}
 ```
 
+
+
 ### 4.12 Table of Contents
 
 **Menu:** Text Editor → **Table of Contents**  
@@ -477,7 +506,11 @@ Indent subentries with two spaces after the `-`. Use an en-dash for ranges (`26-
 
 ---
 
+
+
 ## 5. Player's Handbook snippets
+
+![PHB menu, showing the different available snippets](./assets/phb-menu.png)
 
 **PHB** stands for **Player's Handbook**: the core fifth-edition Dungeons & Dragons player rulebook (the book with classes, spells, and equipment). Homebrewery’s **PHB** menu copies that look—parchment notes, spell write-ups, class features, monster frames, and cover pages—so a homebrew module can sit next to the official book without a layout app.
 
@@ -584,6 +617,8 @@ The yellow (parchment) sidebar the PHB uses for asides, optional rules, and “t
 Harbor Watch will ignore a bribe under 5 gp. They will not ignore a talking gull.
 }}
 ```
+
+
 
 ### 5.6 Descriptive Text Box
 
@@ -731,13 +766,15 @@ Add one credit per sourced image. This does not replace a license page; it is th
 
 ---
 
-## 6. Images, tables et al.
+
+
+## 6. Images, Tables, Fonts and License
 
 This chapter covers four snippet menus you will use after layout and PHB blocks are in place: **Images**, **Tables**, **Fonts**, and **License**, in that order. Insert them from the snippet bar the same way as before: cursor first, then the snippet, then replace placeholders.
 
 ### 6.1 Images
 
-**Menu:** **Images** (picture icon)
+![Images menu, showing the different available snippets](./assets/images-menu.png)
 
 Homebrewery does not upload files from your disk. Every picture must be a **public URL**. You are responsible for the license on that art; pair sourced images with **PHB → Artist Credit**.
 
@@ -752,6 +789,8 @@ The basic snippet: Markdown image plus a curly-brace style list.
 - **Alt text** in `![...]` — a short description if the URL fails.
 - **URL** in `(...)` — a reachable link; a private or expired host shows a blank.
 - `{width:...}` — size. Use `px`, `cm`, or `%` (`width:100%` fills the column).
+
+
 
 #### Image Wrap Left / Image Wrap Right
 
@@ -803,7 +842,7 @@ Diagonal faint text across the page (draft, “PLAYTEST,” your studio name). C
 
 ### 6.2 Tables
 
-**Menu:** **Tables**
+![Tables menu, showing the different available snippets](./assets/tables-menu.png)
 
 Use GitHub-style tables. Colons in the separator row set alignment (`:---` left, `:---:` center, `---:` right). Insert a snippet first, then edit cells.
 
@@ -818,6 +857,8 @@ A single-column PHB table (character advancement, loot, a short encounter chart)
 | 0 | 1 | +2 |
 | 300 | 2 | +2 |
 ```
+
+
 
 #### Wide Table
 
@@ -842,7 +883,11 @@ Two small tables side by side inside `{{column-count:2}}` (for example Typical D
 }}
 ```
 
+
+
 #### Class Tables
+
+![Class Tables menu, showing the different available snippets](./assets/tables-classes-menu.png)
 
 On the PHB theme, **Tables → Class Tables** pastes a 1st–20th progression with the PHB frame. Variants:
 
@@ -867,11 +912,13 @@ Write class feature text with **PHB → Class Feature**, not inside the table ce
 
 #### Rune Table
 
+![Rune Table menu, showing the different available snippets](./assets/tables-rune-menu.png)
+
 **Tables → Rune Table** with **Dwarvish** (`Davek`), **Elvish** (`Rellanic`), or **Draconic** (`Iokharic`). It is a two-row alphabet so you can show a cipher or in-world script. Replace letters if you invent your own mapping; keep `{{runeTable,wide,frame,font-family:...}}`.
 
 ### 6.3 Fonts
 
-**Menu:** **Fonts**
+![Fonts menu, showing the different available snippets](./assets/fonts-menu.png)
 
 Each snippet wraps a short sample in `{{font-family:Name ... }}`. Replace “Dummy Text” with the words you want in that face. Use fonts as **spice** (a title, a letter, a cipher), not as a new body font unless you also change the Style tab.
 
@@ -898,7 +945,7 @@ If a line looks huge or tiny, you wrapped a whole paragraph by mistake—keep fo
 
 ### 6.4 License
 
-**Menu:** **License** (copyright icon)
+![License menu, showing the different available snippets](./assets/license-menu.png)
 
 Most table-only homebrews never open this menu. Open it when you **share or sell** the PDF, post it on DriveThruRPG or a wiki, or reuse someone else’s rules, setting, or art. A license snippet is a **legal notice** the platform or the rights holder expects to see in the book. Homebrewery cannot choose the right one for you, and this guide is not legal advice—but skipping a required notice is how community content gets taken down.
 
@@ -925,6 +972,8 @@ Short map of the menu (you will not need all of it):
 If you are only circulating a private table PDF with your own words and stock art you already paid for, you can skip this menu. If anyone else will download the file, add the notices that apply, plus **Artist Credit** on the pages that use others’ pictures.
 
 ---
+
+
 
 ## 7. Editor tools
 
@@ -958,7 +1007,7 @@ Formats the current editor with a standard layout (indentation and wrapping). On
 
 ### Brew Editor
 
-The **mug** tab. This is the Markdown source: story, snippets, `\page`, tables. Stay here for almost all writing. The left pane you have used since Chapter 2 **is** the Brew Editor.
+The **mug** tab. This is the Markdown source: story, snippets, `\page`, tables. Stay here for almost all writing. The left pane you have used since Chapter 2 **is** the Brew Editor. Click it if you are, for instance, working on a snippet and wish to go back to the Markdown editor. 
 
 ### Style Editor
 
@@ -987,6 +1036,8 @@ The **gear** (often on the preview side). This is **how you look at** the brew, 
 
 ---
 
+
+
 ## 8. Export to PDF
 
 Homebrewery prints through the **browser**. Prefer **Chrome** (Firefox works, but PDF quirks show up there more often).
@@ -999,6 +1050,8 @@ Homebrewery prints through the **browser**. Prefer **Chrome** (Firefox works, bu
 For playtest feedback without freezing the layout, use the live **Share** link instead of a PDF.
 
 ---
+
+
 
 ## 9. Quick troubleshooting
 
@@ -1019,6 +1072,8 @@ You are not expected to get the first page perfect. Adjust `\page` and `\column`
 
 ---
 
+
+
 ## 10. Where to go next
 
 - Editor: [https://homebrewery.naturalcrit.com](https://homebrewery.naturalcrit.com)
@@ -1027,6 +1082,8 @@ You are not expected to get the first page perfect. Adjust `\page` and `\column`
 - Bugs and requests: [naturalcrit/homebrewery issues](https://github.com/naturalcrit/homebrewery/issues)
 
 ---
+
+
 
 ### A small working starter
 
