@@ -9,8 +9,6 @@ This basic guide walks you from a blank brew to a printable PDF, and covers the 
 
 ---
 
-
-
 ## Table of contents
 
 1. [What Homebrewery is](#1-what-homebrewery-is)
@@ -69,8 +67,6 @@ This basic guide walks you from a blank brew to a printable PDF, and covers the 
 
 ---
 
-
-
 ## 1. What Homebrewery is
 
 Homebrewery is a **browser-based editor** that turns Markdown into pages that look like official fifth-edition Dungeons & Dragons books: parchment backgrounds, two-column body text, class tables, notes, and monster stat blocks.
@@ -92,11 +88,7 @@ If something looks “off,” it is usually a missing page break, overflowing co
 
 ---
 
-
-
 ## 2. Start a new document
-
-
 
 ### 2.1 Open the editor
 
@@ -104,8 +96,6 @@ If something looks “off,” it is usually a missing page break, overflowing co
 2. Sign in with Google if you want the brew saved to your account (strongly recommended).
 3. Start a new brew (Home / **New**, or [https://homebrewery.naturalcrit.com/new](https://homebrewery.naturalcrit.com/new)).
 4. Keep the **V3** renderer for new work. Legacy still opens old documents; new snippets and styling live on V3.
-
-
 
 ### 2.2 Learn the workspace
 
@@ -126,8 +116,6 @@ If something looks “off,” it is usually a missing page break, overflowing co
 Place the cursor where the content should appear, then pick a snippet (for example **PHB → Monster Stat Block** or **Tables → …**). Homebrewery pastes a complete, valid example. Replace the placeholder names and numbers. You can always trim extra rows later.
 
 ---
-
-
 
 ## 3. Core Markdown syntax
 
@@ -165,8 +153,6 @@ In monster traits, Homebrewery convention is italic-bold on the trait name:
 ***Keen Smell.*** The hound has advantage on Wisdom (Perception) checks that rely on smell.
 ```
 
-
-
 ### Lists
 
 **Unordered**
@@ -202,8 +188,6 @@ A line with only a colon adds a little vertical space:
 You can write HTML when you must, but stay in Markdown until a snippet cannot do the job.
 
 ---
-
-
 
 ## 4. Text Editor
 
@@ -282,8 +266,6 @@ Type any label you want: `1`, `iv`, `A-3`. Homebrewery prints that text as the f
 {{pageNumber iv}}
 ```
 
-
-
 #### Auto-incrementing Page Number
 
 **Inserts:** `{{pageNumber,auto}}`
@@ -294,8 +276,6 @@ Homebrewery counts physical pages and paints the digit on the outer corner (odd 
 {{pageNumber,auto}}
 ```
 
-
-
 #### Variable Auto Page Number
 
 **Inserts:** `{{pageNumber $[HB_pageNumber]}}`
@@ -305,8 +285,6 @@ Homebrewery counts physical pages and paints the digit on the outer corner (odd 
 ```markdown
 {{pageNumber $[HB_pageNumber]}}
 ```
-
-
 
 #### Skip Page Number Increment this Page
 
@@ -319,8 +297,6 @@ Put this on covers, inside covers, and credits sheets. That page prints **withou
 
 # Saltmarsh Gazetteer
 ```
-
-
 
 #### Restart Numbering
 
@@ -372,8 +348,6 @@ Each colon is a small vertical gap. The snippet drops several at once so you can
 Two iron bars and a sleeping mastiff.
 ```
 
-
-
 ### 4.6 Horizontal Spacing
 
 **Menu:** Text Editor → **Horizontal Spacing**  
@@ -384,8 +358,6 @@ Use this between words, icons, or short phrases when you need a fixed gap that a
 ```markdown
 Name {{width:100px}} Signature _______________
 ```
-
-
 
 ### 4.7 Wide Block
 
@@ -461,8 +433,6 @@ The Homebrewery
 }}
 ```
 
-
-
 ### 4.12 Table of Contents
 
 **Menu:** Text Editor → **Table of Contents**  
@@ -505,8 +475,6 @@ Unlike the ToC, the index is **not** generated from headings. You maintain the e
 Indent subentries with two spaces after the `-`. Use an en-dash for ranges (`26-27`). Place the index at the back of the brew.
 
 ---
-
-
 
 ## 5. Player's Handbook snippets
 
@@ -617,8 +585,6 @@ The yellow (parchment) sidebar the PHB uses for asides, optional rules, and “t
 Harbor Watch will ignore a bribe under 5 gp. They will not ignore a talking gull.
 }}
 ```
-
-
 
 ### 5.6 Descriptive Text Box
 
@@ -766,8 +732,6 @@ Add one credit per sourced image. This does not replace a license page; it is th
 
 ---
 
-
-
 ## 6. Images, Tables, Fonts and License
 
 This chapter covers four snippet menus you will use after layout and PHB blocks are in place: **Images**, **Tables**, **Fonts**, and **License**, in that order. Insert them from the snippet bar the same way as before: cursor first, then the snippet, then replace placeholders.
@@ -789,8 +753,6 @@ The basic snippet: Markdown image plus a curly-brace style list.
 - **Alt text** in `![...]` — a short description if the URL fails.
 - **URL** in `(...)` — a reachable link; a private or expired host shows a blank.
 - `{width:...}` — size. Use `px`, `cm`, or `%` (`width:100%` fills the column).
-
-
 
 #### Image Wrap Left / Image Wrap Right
 
@@ -858,8 +820,6 @@ A single-column PHB table (character advancement, loot, a short encounter chart)
 | 300 | 2 | +2 |
 ```
 
-
-
 #### Wide Table
 
 Wraps the table in `{{wide}}` so it spans both columns. Use this for weapons lists, class-like charts with many columns, or anything that looks crushed in one column.
@@ -882,8 +842,6 @@ Two small tables side by side inside `{{column-count:2}}` (for example Typical D
 | Very hard | 25 |
 }}
 ```
-
-
 
 #### Class Tables
 
@@ -973,9 +931,9 @@ If you are only circulating a private table PDF with your own words and stock ar
 
 ---
 
-
-
 ## 7. Editor tools
+
+![Editor tools, including History, Undo, Redo, and related controls](./assets/editor-tools.png)
 
 The snippet bar is more than snippet menus. Along it (and on the tabs at the right) sit tools that save you from lost work, tidy the source, and switch what you are editing. You do not need CSS to use any of these.
 
@@ -1011,13 +969,19 @@ The **mug** tab. This is the Markdown source: story, snippets, `\page`, tables. 
 
 ### Style Editor
 
+![Style Editor CSS tab](./assets/css-tab.png)
+
 The **paintbrush** tab. This pane is **only CSS** for this brew: page size, colours, drop caps, ink-friendly print. Built-in **Print** and other style snippets insert here, not into the Markdown. You can ignore this tab and still finish a complete PHB-looking module. If you do open it, put custom rules here instead of burying `<style>` tags in the Brew Editor. This chapter will not teach CSS.
 
 ### Snippets
 
+![Snippets tab, for defining reusable brew snippets](./assets/snippets-tab.png)
+
 The **list** tab next to Style. This is where **you** define reusable bits (a house-style note, a custom stat-block stub). They then appear under a **Brew Snippets** menu on the snippet bar. Built-in PHB and Text Editor snippets do **not** live here; those menus are already filled. Widen the editor pane if Brew Snippets looks empty or clipped. Custom snippets can travel with a theme you share.
 
 ### Properties
+
+![Properties tab, for brew title, theme, and renderer](./assets/properties-tab.png)
 
 The **i** (info) button. Metadata for **this brew**:
 
@@ -1032,11 +996,11 @@ Set the title early. Do not switch renderer mid-project unless you are ready to 
 
 ### Settings
 
+![Editor settings tab, for preview layout and view options](./assets/editor-settings-tab.png)
+
 The **gear** (often on the preview side). This is **how you look at** the brew, not the brew’s content: single page vs facing pages vs a continuous “flow” view, **Sync views** (scrolling the editor and preview together), and **Hide** for the page strip. None of these change the PDF except insofar as they help you spot overflow before you export.
 
 ---
-
-
 
 ## 8. Export to PDF
 
@@ -1050,8 +1014,6 @@ Homebrewery prints through the **browser**. Prefer **Chrome** (Firefox works, bu
 For playtest feedback without freezing the layout, use the live **Share** link instead of a PDF.
 
 ---
-
-
 
 ## 9. Quick troubleshooting
 
@@ -1072,8 +1034,6 @@ You are not expected to get the first page perfect. Adjust `\page` and `\column`
 
 ---
 
-
-
 ## 10. Where to go next
 
 - Editor: [https://homebrewery.naturalcrit.com](https://homebrewery.naturalcrit.com)
@@ -1082,8 +1042,6 @@ You are not expected to get the first page perfect. Adjust `\page` and `\column`
 - Bugs and requests: [naturalcrit/homebrewery issues](https://github.com/naturalcrit/homebrewery/issues)
 
 ---
-
-
 
 ### A small working starter
 
